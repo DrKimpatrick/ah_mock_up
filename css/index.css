@@ -1,0 +1,109 @@
+.adjust-table{
+    width: 100%;
+    padding: 100px;
+}
+
+.adjust-column{
+    align-content: center;
+    margin-right: 100px;
+}
+
+div.a {
+    white-space: nowrap;
+    width: 100px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    border: 1px solid #000000;
+}
+
+div.a:hover {
+    overflow: visible;
+}
+
+.lable-one{
+    background-color: orange;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.lable-two{
+    background-color: lightgreen;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.landing{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.image-size{
+    width:70px;
+    height:70px;
+}
+
+.article-by{
+    margin-left:30px;
+    color: #000000;
+    font-size: 15px;
+
+}
+
+.details{
+
+    color: #000000;
+    font-size: 15px;
+
+}
+
+.d-details{
+    margin:60px;
+
+
+}
+
+.design-card{
+    padding:50px;
+}
+
+.design-card-two{
+    padding:30px;
+}
+
+.row {
+    text-align: left;
+}
+.element {
+    display: inline-block;
+    margin-right: 6px;
+
+
+}
+
+.written-by{
+    margin-top: 20px;
+}
+
+.bio{
+
+    margin-left: 70px;
+    margin-top: 1px;
+}
+
+.card-title{
+    padding:20px;
+    text-align: center;
+}
+
+.verticle-parent{
+    width: 100%;
+    display: table-cell;
+    margin: 10px;
+}
+
+.verticle-child{
+    display: table-cell;
+    vertical-align: middle;
+}

@@ -1,0 +1,175 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!--<link rel="stylesheet" href="materialize/css/materialize.min.css">-->
+
+    <title>Materialize</title>
+</head>
+<body>
+    <nav class="nav-wrapper hoverable light-blue">
+        <div class="container">
+            <a href="#" class="brand-logo left ">Author's Haven</a>
+            <ul class="right hide-on-med-and-down" id="navbar-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="user_list.html">Other profile</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 30px">
+
+        <div class="row">
+            <div class="col s12 m2 offset-m1">
+                <img src="images/kim_1.jpg" alt="kim_1" class="responsive-img circle">
+                <ul class="collection">
+                  <li class="collection-item light-blue-text"><a href="user_list.html">Following: &nbsp;<span>123</span></a></li>
+                  <li class="collection-item light-blue-text"><a href="user_list.html">Followers: &nbsp;<span>100</span></a></li>
+                  <li class="collection-item light-blue-text"><a href="index.html">Favorites: &nbsp;<span>2</span></a></li>
+                </ul>
+
+            </div>
+
+            <form action="#" class="col s12 m8">
+                <div class="row">
+                    <div class="col"><h4>Personal information</h4></div>
+
+                </div>
+                  <div class="row">
+                        <div class="input-field col s6">
+
+                            <i class="material-icons prefix">account_circle</i>
+                              <input placeholder="First name" id="first_name" type="text" class="validate">
+                              <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                              <input id="last_name" type="text" class="validate">
+                              <label for="last_name">Last Name</label>
+                        </div>
+                  </div>
+
+                  <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons">location</i>
+                              <input id="password" type="text" class="validate">
+                              <label for="password">Location</label>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                              <input id="email" type="email" class="validate">
+                              <label for="email">Email</label>
+                        </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="input-field col s12">
+                         <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+                        <label for="textarea2">Type your bio here</label>
+                      </div>
+                  </div>
+                  <div class="row">
+                        <div class="file-field input-field">
+                              <div class="btn btn-small white black-text">
+                                    <span>Pic</span>
+                                    <input type="file">
+                              </div>
+                              <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                              </div>
+                        </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                          <a href="#profile_update" class="btn btn-large light-blue modal-trigger">Update</a>
+                      <a href="#" class="btn btn-large white black-text">Cancel</a>
+                      </div>
+                  </div>
+                <hr>
+                  <div class="row">
+                  <div class="col"><h4>Change password</h4></div>
+
+                  </div>
+                <div class="row">
+                        <div class="input-field col s6">
+
+                            <i class="material-icons prefix">account_circle</i>
+                              <input placeholder="New password" id="new_password" type="password" required>
+                              <label for="new_password">New password</label>
+                        </div>
+                        <div class="input-field col s6">
+                              <input placeholder="Confirm passwor" id="confirm_password" type="password" required>
+                              <label for="confirm_password">Confirm password</label>
+                        </div>
+                  </div>
+                <div class="row">
+                      <div class="col">
+                          <a href="#password_update" class="btn btn-large light-blue modal-trigger">Update</a>
+                      <a href="#" class="btn btn-large white black-text">Cancel</a>
+                      </div>
+                  </div>
+        </form>
+        </div>
+         <div class="row">
+            <div class="col s12 m6">
+                <div class="modal" id="password_update">
+                    <div class="modal-content">
+                        <h4>Successful</h4>
+                        <hr>
+                        <p>Password changed successfully</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="modal-close orange btn">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="modal" id="profile_update">
+                    <div class="modal-content">
+                        <h4>Successful</h4>
+                        <hr>
+                        <p>Successfully update your profile.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="modal-close orange btn">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+    <!--<script src="materialize/js/materialize.min.js"></script>-->
+        <script>
+            $(document).ready(function() {
+                $('input#input_text, textarea#textarea2').characterCounter();
+              });
+        </script>
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal()
+        })
+    </script>
+</body>
+</html>
